@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/icon_scan2"
+            android:id="@+id/icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#82c94c"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/text_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00000000000000000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lines="4"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+       <Button
+           android:id="@+id/bt1"
+           android:layout_width="70dp"
+           android:layout_height="70dp"
+           android:text="Web Search"
+           android:textSize="15dp"
+           android:textStyle="bold"
+           android:drawableTop="@android:drawable/ic_menu_search"
+           android:background="@drawable/bt1"
+           />
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="Share"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/bt1"
+            android:layout_marginLeft="10dp"
+            android:drawableTop="@drawable/ic_menu_share"
+            android:background="@drawable/bt1"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
